@@ -1,6 +1,5 @@
 
 sensor:
-
   - platform: rest
     name: comunicazione servizio
     resource: https://alert.atm.it/it
@@ -170,6 +169,7 @@ template:
 automation:
 - id: ' metro'
   alias: metro
+  description: 'Notifica stato metro'
   mode: parallel
   trigger:
   - platform: state
